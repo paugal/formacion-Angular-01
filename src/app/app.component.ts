@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'mi-primera-app';
+  public title:string = 'Mi Primera App En Angular';
+  public currentBlock:string = "counter";
+  
+  selectBlock(block:string):void{
+    this.currentBlock = block;
+  }
+
 }
