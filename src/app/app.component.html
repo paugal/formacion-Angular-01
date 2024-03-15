@@ -15,7 +15,13 @@
   class="btn btn-primary mx-2">
   List
 </button>
+<button
+  (click)="selectBlock('dbz')"
+  class="btn btn-primary mx-2">
+  DBZ Personajes
+</button>
 <div class="my-5">
 <app-counter *ngIf="this.currentBlock == 'counter' " ></app-counter>
 <app-heroes-hero *ngIf="this.currentBlock == 'hero'" ></app-heroes-hero>
 <app-heroes-list *ngIf="this.currentBlock == 'list'" ></app-heroes-list>
+<dbz-main-page *ngIf="this.currentBlock == 'dbz'" ></dbz-main-page>
